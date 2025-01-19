@@ -87,8 +87,8 @@ public class JwtFilter extends OncePerRequestFilter {
         final List<Pair<String, String>> nonAuthRequests = List.of(
                 // Swagger
                 Pair.of("/swagger-ui/**", "GET"),
-                Pair.of("/v3/api-docs/**", "GET"),
-                Pair.of("/v3/api-docs", "GET"),
+                Pair.of("/v1/api-docs/**", "GET"),
+                Pair.of("/v1/api-docs", "GET"),
                 Pair.of("/swagger-resources", "GET"),
                 Pair.of("/swagger-resources/**", "GET"),
                 Pair.of("/configuration/ui", "GET"),
